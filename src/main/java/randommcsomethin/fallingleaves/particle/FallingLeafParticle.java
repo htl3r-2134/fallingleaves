@@ -165,8 +165,8 @@ public class FallingLeafParticle extends SpriteBillboardParticle {
                 double windNorm2d = Math.sqrt(wind.x * wind.x + wind.z * wind.z);
                 if (windNorm2d >= 1.0E-4) {
                     double norm = Math.sqrt(ax*ax + az*az);
-                    ax = norm * wind.x / windNorm2d;
-                    az = norm * wind.z / windNorm2d;
+                    ax = norm * windCoefficient * wind.x / windNorm2d;
+                    az = norm * windCoefficient * wind.z / windNorm2d;
                 } else {
                     // hopefully doesn't happen too often
                     ax = az = 0;
