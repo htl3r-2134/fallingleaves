@@ -41,7 +41,7 @@ public class ConfigDefaults {
             case "terrestria:japenese_maple_shrub_leaves":
             case "terrestria:jungle_palm_leaves":
             case "terrestria:yucca_palm_leaves":
-                return 0.0;
+                return 1.8;
 
             // Autumn Leaves
             case "promenade:autumn_birch_leaves":
